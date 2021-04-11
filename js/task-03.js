@@ -34,6 +34,7 @@ const makeImagesSection = action => {
 }; 
  
 const imagesEl = document.querySelector('#gallery');
+      imagesEl.style.listStyle = 'none';
 const createImagesEl = images.map(makeImagesSection).join('');
 
 imagesEl.insertAdjacentHTML('beforeend', createImagesEl);
