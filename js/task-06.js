@@ -17,17 +17,16 @@ function onInputChange(event) {
    // console.log(event.currentTarget.value.length); 
     if (event.currentTarget.value.length === inputAttributeValue  ) {
         validationInput.classList.add('valid');
-        
-        console.log('Вы успешно ввели 6 символов:)');
+        error.innerHTML = "";
 
     } else {   validationInput.classList.add('invalid');
-            
+     error.innerHTML = 'Пожалуйста, введите ровно 6 символов.'  
     }  
      
 };
 
  function onInputFocus() {
      validationInput.classList.remove('valid', 'invalid');
-       
+    
 };
     
